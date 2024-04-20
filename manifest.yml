@@ -1,0 +1,9 @@
+---
+applications:
+- name: album-tracker
+  memory: 64M
+  buildpacks:
+  - staticfile_buildpack
+  path: public
+  routes:
+  - route: album-tracker.cfapps.nulldriver.com
