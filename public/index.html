@@ -1,10 +1,104 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hello, World!</title>
+    <title>ADV Viabilty Tierlist!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+        h2 {
+            color: #13d561;
+        }
+        table {
+            /* width: 100%; */
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+        .sprite {
+            width: 100px;
+            height: 100px;
+        }
+        .copyicon {
+            width: 12px;
+            height: 12px;
+        }
+    </style>
+    <script>
+        function copyToClipboard(textId) {
+            const elem = document.getElementById(textId);
+            
+            navigator.clipboard.writeText(elem.innerText);
+        }
+    </script>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>More to come...</p>
+    <h1> ADV OU Viabilty Tierlist</h1>
+    <h2>S Tier</h2>
+    <table>
+        <tr>
+            <td>Tyrannitar</td>
+            <td>Skarmory</td>
+        </tr>
+        <tr>
+            <td><img class="sprite" src="assets/tyranitar.png" /></td>
+            <td><img class="sprite" src="assets/skarmory.png" /></td>
+    
+        </tr>
+        <tr>
+            <td>Fast Dragon Dance Set <a href="javascript:void(0);" onclick="copyToClipboard('tyranitarText');"><img class="copyicon" src="assets/copyicon.png"></a>
+                <ul>
+                    <li>Dragon Dance</li>
+                    <li>Rock SLide</li>
+                    <li>Earth Quake</li>
+                    <li>Hidden Power Bug</li>
+                    <li>Item: Lum Berry</li>
+                </ul>
+                <textarea id="tyranitarText" style="display: none;">
+Tyranitar @ Lum Berry
+Ability: Sand Stream
+EVs: 4 HP / 252 Atk / 252 Spe
+Jolly Nature
+- Dragon Dance
+- Rock Slide
+- Earthquake
+- Hidden Power Bug
+                </textarea>
+            </td>
+            <td>TSS Utility Set <a href="javascript:void(0);" onclick="copyToClipboard('skarmoryText');"><img class="copyicon" src="assets/copyicon.png"></a>
+                <ul>
+                    <li>Spikes</li>
+                    <li>Roar</li>
+                    <li>Protect</li>
+                    <li>Toxic</li>
+                    <li>Item: Leftovers</li>
+                </ul>
+                <textarea id="skarmoryText" style="display: none;">
+Skarmory @ Leftovers
+Ability: Keen Eye
+EVs: 252 HP / 252 SpD / 4 Spe
+Careful Nature
+- Spikes
+- Roar
+- Protect
+- Toxic
+                </textarea>
+            </td>
+        </tr>
+    </table>
 </body>
-</html>
+</html
